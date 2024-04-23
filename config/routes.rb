@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  get("/", { :controller => "addition", :action => "show_addition_form" })
+  get("/", { :controller => "addition", :action => "addition_form" })
 
   get("/ad", { :controller => "addition", :action => "show_addition_form" })
-  get("/wizard_add", { :controller => "addition", :action => "add_these" })
+
+  get("/wizard_addition", { :controller => "addition", :action => "add_these" })
 
   get("/subtract", { :controller => "subtract", :action => "show_sub_form" })
   get("", { :controller => "subtraction", :action => "subtract" })
